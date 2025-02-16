@@ -19,8 +19,9 @@
             height: 20px;
             border-radius: 50%;
             --button-color-lightness: 25%;
-            --button-color-hue: 320;
-            background: hsl(var(--button-color-hue), 100%, var(--button-color-lightness));
+            --button-color-hue: 120;
+            --button-color-saturation: 100%;
+            background: hsl(var(--button-color-hue), var(--button-color-saturation), var(--button-color-lightness));
             border: none;
             box-shadow: none;
         }
@@ -51,22 +52,67 @@
 
 
     }
+}
 
+.state-toggle.auto-color {
     .toggle-option:first-child{
-        button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange){
+        button{
             --button-color-hue: 0;
         }
     }
 
     .toggle-option:nth-child(2){
-        button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
+        button {
             --button-color-hue: 60;
         }
     }
 
     .toggle-option:last-child{
-        button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
+        button {
             --button-color-hue: 120;
         }
     }
+}
+
+.state-toggle.red-color {
+    .toggle-option button{
+        --button-color-hue: 0;
+    }
+}
+
+.state-toggle.green-color {
+    .toggle-option button{
+        --button-color-hue: 120;
+    }
+}
+
+.state-toggle.blue-color {
+    .toggle-option button{
+        --button-color-hue: 240;
+    }
+}
+
+.state-toggle.yellow-color {
+    .toggle-option button{
+        --button-color-hue: 60;
+    }
+}
+
+.state-toggle.orange-color {
+    .toggle-option button{
+        --button-color-hue: 30;
+    }
+}
+
+.state-toggle.grey-scale {
+    .toggle-option button{
+        --button-color-saturation: 0%;
+        --button-color-hue:240;
+        --button-color-lightness: 50%;
+    }
+
+    input[type="radio"]:checked + label + button {
+        --button-color-lightness: 100%;
+    }
+
 }
