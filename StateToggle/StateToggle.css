@@ -18,6 +18,10 @@
   height: 60px;
 }
 
+.state-toggle.rounded {
+  border-radius: 20px;
+}
+
 .state-toggle.rounded.small {
   border-radius: 20px;
 }
