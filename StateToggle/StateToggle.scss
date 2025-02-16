@@ -1,6 +1,10 @@
 .state-toggle {
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    background-color: hsl(0, 10%, 10%);
+    margin: 3px;
+    width:max-content;
     gap: 10px;
     .toggle-option{
         input[type="radio"]{
@@ -17,6 +21,8 @@
             --button-color-lightness: 25%;
             --button-color-hue: 320;
             background: hsl(var(--button-color-hue), 100%, var(--button-color-lightness));
+            border: none;
+            box-shadow: none;
         }
 
         input[type="radio"]:checked + label + button {
