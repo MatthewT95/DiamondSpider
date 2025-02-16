@@ -1,3 +1,39 @@
+.state-toggle.small .toggle-option button {
+  width: 20px;
+  height: 20px;
+}
+
+.state-toggle.medium .toggle-option button {
+  width: 30px;
+  height: 30px;
+}
+
+.state-toggle.large .toggle-option button {
+  width: 40px;
+  height: 40px;
+}
+
+.state-toggle.xlarge .toggle-option button {
+  width: 60px;
+  height: 60px;
+}
+
+.state-toggle.rounded.small {
+  border-radius: 20px;
+}
+
+.state-toggle.rounded.medium {
+  border-radius: 25px;
+}
+
+.state-toggle.rounded.large {
+  border-radius: 30px;
+}
+
+.state-toggle.rounded.xlarge {
+  border-radius: 35px;
+}
+
 .state-toggle.dark-mode {
   background-color: hsl(0, 10%, 10%);
 }
