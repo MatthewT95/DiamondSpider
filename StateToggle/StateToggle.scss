@@ -1,0 +1,62 @@
+.state-toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    .toggle-option{
+        input[type="radio"]{
+            display: none;
+        }
+        label{
+            display: none;
+        }
+
+        button {
+            width:20px;
+            height: 20px;
+            border-radius: 50%;
+            --button-color-lightness: 25%;
+            --button-color-hue: 320;
+            background: hsl(var(--button-color-hue), 100%, var(--button-color-lightness));
+        }
+
+        input[type="radio"]:checked + label + button {
+            --button-color-lightness: 50%;
+        }
+
+        button.red {
+            --button-color-hue: 0;
+        }
+
+        button.green {
+            --button-color-hue: 120;
+        }
+
+        button.blue {
+            --button-color-hue: 240;
+        }
+
+        button.yellow {
+            --button-color-hue: 60;
+        }
+
+
+    }
+
+    .toggle-option:first-child{
+        button:not(.red):not(.green):not(.blue):not(.yellow){
+            --button-color-hue: 0;
+        }
+    }
+
+    .toggle-option:nth-child(2){
+        button:not(.red):not(.green):not(.blue):not(.yellow) {
+            --button-color-hue: 60;
+        }
+    }
+
+    .toggle-option:last-child{
+        button:not(.red):not(.green):not(.blue):not(.yellow) {
+            --button-color-hue: 120;
+        }
+    }
+}
