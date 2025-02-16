@@ -45,23 +45,27 @@
             --button-color-hue: 60;
         }
 
+        button.orange {
+            --button-color-hue:30;
+        }
+
 
     }
 
     .toggle-option:first-child{
-        button:not(.red):not(.green):not(.blue):not(.yellow){
+        button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange){
             --button-color-hue: 0;
         }
     }
 
     .toggle-option:nth-child(2){
-        button:not(.red):not(.green):not(.blue):not(.yellow) {
+        button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
             --button-color-hue: 60;
         }
     }
 
     .toggle-option:last-child{
-        button:not(.red):not(.green):not(.blue):not(.yellow) {
+        button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
             --button-color-hue: 120;
         }
     }
