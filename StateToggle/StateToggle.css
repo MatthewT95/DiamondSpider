@@ -1,0 +1,54 @@
+.state-toggle {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: hsl(0, 10%, 10%);
+  margin: 3px;
+  width: max-content;
+  gap: 10px;
+}
+.state-toggle .toggle-option input[type=radio] {
+  display: none;
+}
+.state-toggle .toggle-option label {
+  display: none;
+}
+.state-toggle .toggle-option button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  --button-color-lightness: 25%;
+  --button-color-hue: 320;
+  background: hsl(var(--button-color-hue), 100%, var(--button-color-lightness));
+  border: none;
+  box-shadow: none;
+}
+.state-toggle .toggle-option input[type=radio]:checked + label + button {
+  --button-color-lightness: 50%;
+}
+.state-toggle .toggle-option button.red {
+  --button-color-hue: 0;
+}
+.state-toggle .toggle-option button.green {
+  --button-color-hue: 120;
+}
+.state-toggle .toggle-option button.blue {
+  --button-color-hue: 240;
+}
+.state-toggle .toggle-option button.yellow {
+  --button-color-hue: 60;
+}
+.state-toggle .toggle-option button.orange {
+  --button-color-hue:30;
+}
+.state-toggle .toggle-option:first-child button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
+  --button-color-hue: 0;
+}
+.state-toggle .toggle-option:nth-child(2) button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
+  --button-color-hue: 60;
+}
+.state-toggle .toggle-option:last-child button:not(.red):not(.green):not(.blue):not(.yellow):not(.orange) {
+  --button-color-hue: 120;
+}
+
+/*# sourceMappingURL=StateToggle.css.map */
