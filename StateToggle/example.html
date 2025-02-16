@@ -6,36 +6,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="StateToggle.css">
     <script defer src="StateToggle.js"></script>
+    <script defer>
+        setInterval(() => {
+            document.querySelector('.out1').innerHTML = document.querySelector('.state-toggle input[name="state1"]:checked + label').innerHTML;
+            document.querySelector('.out2').innerHTML = document.querySelector('.state-toggle input[name="state2"]:checked + label').innerHTML;
+        }, 100);
+    </script>
 </head>
 <body>
     <div class="state-toggle">
         <div class="toggle-option">
             <input type="radio" name="state1" id="state1.a" value="state1">
-            <label for="state1.a">State 1</label>
+            <label for="state1.a">Disabled</label>
             <button class="toggle-button" title="Disable"></button>
         </div>
         <div class="toggle-option">
             <input type="radio" name="state1" id="state1.b" value="state1" checked>
-            <label for="state1.b">State 1</label>
+            <label for="state1.b">Unset</label>
             <button class="toggle-button" title="Unset"></button>
         </div>
         <div class="toggle-option">
             <input type="radio" name="state1" id="state1.c" value="state1">
-            <label for="state1.c">State 1</label>
+            <label for="state1.c">Enabled</label>
             <button class="toggle-button" title="Enable"></button>
         </div>
     </div>
+    <output class="out1"></output>
     <div class="state-toggle">
         <div class="toggle-option">
             <input type="radio" name="state2" id="state2.a" value="state1" checked>
-            <label for="state2.a">State 1</label>
+            <label for="state2.a">Orange</label>
             <button class="toggle-button orange" title="Disable"></button>
         </div>
         <div class="toggle-option">
             <input type="radio" name="state2" id="state2.b" value="state1">
-            <label for="state2.b">State 1</label>
+            <label for="state2.b">Blue</label>
             <button class="toggle-button blue" title="Enable"></button>
         </div>
     </div>
+    <output class="out2"></output>
 </body>
 </html>
