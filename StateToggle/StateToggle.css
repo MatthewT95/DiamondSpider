@@ -1,8 +1,16 @@
+.state-toggle.dark-mode {
+  background-color: hsl(0, 10%, 10%);
+}
+
+.state-toggle.light-mode {
+  background-color: hsl(0, 10%, 90%);
+}
+
 .state-toggle {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  background-color: hsl(0, 10%, 10%);
+  background-color: transparent;
   margin: 3px;
   width: max-content;
   gap: 10px;
