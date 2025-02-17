@@ -44,6 +44,15 @@
     gap: 60px;
 }
 
+// Direction Modfiers
+.state-toggle.horizontal {
+    flex-direction: row;
+}
+
+.state-toggle.vertical {
+    flex-direction: column;
+}
+
 // Corner Modfiers Rounded
 .state-toggle.rounded {
     border-radius: 20px;
