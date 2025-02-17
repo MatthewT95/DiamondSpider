@@ -1,3 +1,4 @@
+// Size modifiers for state-toggle buttons
 .state-toggle.small {
     .toggle-option button {
         width: 20px;
@@ -26,22 +27,24 @@
     }
 }
 
+// Gap size modifiers for state-toggle
 .state-toggle.gap-small {
     gap: 10px;
 }
 
 .state-toggle.gap-medium {
-    gap:20px;
+    gap: 20px;
 }
 
 .state-toggle.gap-large {
-    gap:40px;
+    gap: 40px;
 }
 
 .state-toggle.gap-xlarge {
-    gap:60px;
+    gap: 60px;
 }
 
+// Corner Modfiers Rounded
 .state-toggle.rounded {
     border-radius: 20px;
 }
@@ -62,6 +65,7 @@
     border-radius: 35px;
 }
 
+// Theme modfiers
 .state-toggle.dark-mode {
     background-color: hsl(0, 10%, 10%);
 }
@@ -126,6 +130,7 @@
     }
 }
 
+// Automanic Coloring of buttons
 .state-toggle.auto-color {
     .toggle-option:first-child{
         button{
@@ -145,37 +150,38 @@
         }
     }
 }
-
+// Color modifiers for state-toggle buttons
 .state-toggle.red-color {
-    .toggle-option button{
+    .toggle-option button {
         --button-color-hue: 0;
     }
 }
 
 .state-toggle.green-color {
-    .toggle-option button{
+    .toggle-option button {
         --button-color-hue: 120;
     }
 }
 
 .state-toggle.blue-color {
-    .toggle-option button{
+    .toggle-option button {
         --button-color-hue: 240;
     }
 }
 
 .state-toggle.yellow-color {
-    .toggle-option button{
+    .toggle-option button {
         --button-color-hue: 60;
     }
 }
 
 .state-toggle.orange-color {
-    .toggle-option button{
+    .toggle-option button {
         --button-color-hue: 30;
     }
 }
 
+// Grey scale color mode
 .state-toggle.grey-scale {
     .toggle-option button{
         --button-color-saturation: 0%;
