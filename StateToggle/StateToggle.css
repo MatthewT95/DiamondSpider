@@ -18,6 +18,30 @@
   height: 60px;
 }
 
+.state-toggle.gap-small {
+  gap: 10px;
+}
+
+.state-toggle.gap-medium {
+  gap: 20px;
+}
+
+.state-toggle.gap-large {
+  gap: 40px;
+}
+
+.state-toggle.gap-xlarge {
+  gap: 60px;
+}
+
+.state-toggle.horizontal {
+  flex-direction: row;
+}
+
+.state-toggle.vertical {
+  flex-direction: column;
+}
+
 .state-toggle.rounded {
   border-radius: 20px;
 }
